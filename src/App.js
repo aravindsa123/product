@@ -8,6 +8,7 @@ import Logindata from "./components/Login/Logindata";
 import Course from "./components/course/Course";
 import Home from "./components/Home/Home";
 import Book from "./components/Book/Book";
+import Bookview from "./components/Book/Bookview";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path={"/Course"} element={<Course/>}></Route> 
       <Route path={"/Home"} element={<Home/>}></Route> 
       <Route path={"/Book"} element={<Book/>}></Route> 
+      <Route path={"/Bookview"} element={<Bookview/>}></Route> 
       </Routes>
       </BrowserRouter>
       {/* <Transferdata username="Aravind" password="Avd2255" usertype="Admin"/> */}

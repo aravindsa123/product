@@ -37,7 +37,7 @@ const Book = () => {
             author:au,
             publisher:pu
         }
-        fetch("https://project01-32f37-default-rtdb.firebaseio.com/Project01.json",
+        fetch("https://project01-cf43a-default-rtdb.firebaseio.com/Book.json",
         {
             method:"POST",
             body:JSON.stringify(myobj),
@@ -45,17 +45,18 @@ const Book = () => {
         }
         }
         );
+        alert("Record Saved")
     }
    
   return (
     <div>
-        <h1 className='aa'>BOOK DETAILS</h1>
+      <h1 className='aa'>BOOK DETAILS</h1>
       <form className='f'>
         Book Name<input type="text" onChange={readbookname}/><br/><br/>
         Author<input type="text" onChange={readauthor}/><br/><br/>
         Publisher<input type="text" onChange={readpublisher}/><br/><br/>
         <button type="submit" onClick={checkfilleddata} className='b'>Save</button>
-        {er && 'Please Fill the above columns'}
+        {er && 'Please fill the above columns'}
       </form>
     </div>
   )
